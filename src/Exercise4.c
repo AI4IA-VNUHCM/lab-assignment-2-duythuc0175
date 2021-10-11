@@ -23,12 +23,6 @@ int main(int argc, char *argv[]) {
 	//Your codes here
 	int temp;
 
-  for(int i=0;i<n;i++)
-  {
-      scanf("%d",&test_array[i]);
-
-
-  }
   for(int i=0;i<n-1;i++)
   {
       for(int j=0;j<n/2;j++)
@@ -53,10 +47,10 @@ int main(int argc, char *argv[]) {
   for(int i=0;i<n;i++)
   {
 
-      printf("%d",test_array[i]);
+      printf("%d ",test_array[i]);
 
   }
-	
-	
+
+
 	return 0;
 }
