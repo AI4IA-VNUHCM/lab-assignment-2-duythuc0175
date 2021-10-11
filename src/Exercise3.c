@@ -15,31 +15,26 @@ int main(int argc, char *argv[]) {
 	int testcase = atoi(argv[1]);
 	
 	//Your codes here
-	 
-    primeFactors(testcase);
-    return 0;
-    
-    
-}
-void primeFactors(int testcase)
-{
-
-    while (testcase % 2 == 0)
+	 while (testcase%2 == 0)
     {
-        printf(" 2 *");
+        printf("%d ", 2);
         testcase = testcase/2;
     }
-
-    for (int i = 3; i <= sqrt(testcase); i = i + 2)
+    for (int i = 3; i <= sqrt(testcase); i = i+2)
     {
-
-        while (testcase % i == 0)
+        while (testcase%i == 0)
         {
-           printf(" %d ",i);
+            printf("%d ",i);
             testcase = testcase/i;
+			if(testcase >= i)
+			    printf("* ");
         }
     }
-
     if (testcase > 2)
-          printf(" %d ",testcase);
+        printf ("%d ", testcase);
+    
+    return 0;
+    
 }
+
+
